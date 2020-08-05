@@ -9,7 +9,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-const port = process.env.port || 3000;
+const port = process.env.port || 80;
 
 var dbUrl = 'mongodb://jbrito:Z3-nedation@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
 
