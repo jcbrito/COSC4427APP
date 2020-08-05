@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:80/messages', (data) => {
+        $.get('http://cosc4427app-env.eba-xnta4sr2.us-east-1.elasticbeanstalk.com/:80/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:80/messages', message)
+        $.post('http://cosc4427app-env.eba-xnta4sr2.us-east-1.elasticbeanstalk.com/:80/messages', message)
     }
 </script>
