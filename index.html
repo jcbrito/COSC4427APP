@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:8080/messages', (data) => {
+        $.get('http://3.222.126.176:8080/messages', (data) => {
             data.forEach(addMessage);
         })
     }
     
     function postMessage(message) {
-        $.post('http://localhost:8080/messages', message)
+        $.post('http://3.222.126.176:8080/messages', message)
     }
 </script>
