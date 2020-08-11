@@ -37,12 +37,13 @@
     }
 
     function getMessages() {
-        $.get('http://cosc4427app-env.eba-xnta4sr2.us-east-1.elasticbeanstalk.com/:8080/messages', (data) => {
+        $.get('http://3.222.126.176:8080/messages', (data) => {
             data.forEach(addMessage);
         })
     }
     
     function postMessage(message) {
-        $.post('http://cosc4427app-env.eba-xnta4sr2.us-east-1.elasticbeanstalk.com/:8080/messages', message)
+        $.post('http://3.222.126.176:8080/messages', message)
     }
+    
 </script>
