@@ -1,0 +1,14 @@
+version: 0.5
+phases:
+  prebuild:
+    commands:
+      -echo "Pre-build phase"
+  
+  build:
+    commands:
+      -echo "Build phase"
+  
+  post-build:
+    commands:
+      -echo "All good"
+
