@@ -1,4 +1,9 @@
 version: 0.2
+
+secrets-manage:
+  username: MongoDB:username
+  password: MongoDB:password
+
 phases:
   pre_build:
     commands:
