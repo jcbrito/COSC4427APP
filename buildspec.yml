@@ -7,6 +7,7 @@ secrets-manage:
 phases:
   pre_build:
     commands:
+      - echo username
       - echo "Pre-build phase"
   
   build:
