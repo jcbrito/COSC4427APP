@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "Build phase"
       - npm build
-      - npm test
+     
   
   post_build:
     commands:
