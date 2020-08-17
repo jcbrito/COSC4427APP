@@ -16,11 +16,7 @@ phases:
     commands:
       - echo "All good"
 
-reports:
-  jasmine_reports:
-    files:
-      - report.json
-    file-format: JunitXml
+
    
 
 
