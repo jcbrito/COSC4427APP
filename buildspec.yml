@@ -1,21 +1,26 @@
 version: 0.2
 
-secrets-manage:
-  username: MongoDB:username
-  password: MongoDB:password
-
 phases:
   pre_build:
     commands:
-      - echo the username is ${username}
       - echo "Pre-build phase"
+      - npm install
   
   build:
     commands:
       - echo "Build phase"
+      - npm build
+      - npm test
   
   post_build:
     commands:
       - echo "All good"
+
+reports:
+  jasmine_reports:
+    files:
+      - report `date
+    file-format: JunitXml
+    base-directory: <test report directory>
 
 
