@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "Build phase"
       - npm build
-      
+      - npm test
   
   post_build:
     commands:
@@ -21,6 +21,6 @@ reports:
     files:
       - report `date
     file-format: JunitXml
-    base-directory: <test report directory>
+   
 
 
