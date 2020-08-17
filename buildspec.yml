@@ -19,7 +19,7 @@ phases:
 reports:
   jasmine_reports:
     files:
-      - report `date
+      - report.json
     file-format: JunitXml
    
 
