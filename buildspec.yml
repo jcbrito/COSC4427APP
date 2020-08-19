@@ -3,33 +3,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Pre-build phase"
       - npm install
-      
-      
-  
   build:
     commands:
-      - echo "Build phase"
       - npm build
       - npm test
 
-  reports:
-   jasmine_reports:
+reports:
+  jasmine_reports:
     files:
-      -  '**/*'
+      - my-report.json
     file-format: JunitXml
     base-directory: elasticbeanstalk-us-east-1-840375668770/tests
-
-
-  
-  post_build:
-    commands:
-      - echo "All good"
-
-
-
-
-   
-
-
