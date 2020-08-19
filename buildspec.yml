@@ -14,4 +14,4 @@ reports:
     files:
       - '**/*'
     file-format: JunitXml 
-    base-directory: 'spec/tests'
+    base-directory: 'reports/'
