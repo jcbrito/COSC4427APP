@@ -17,6 +17,7 @@
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
+    "jasmine": "^3.6.1",
     "jasmine-reporters": "^2.3.2"
   }
 }
