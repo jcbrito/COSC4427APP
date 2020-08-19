@@ -12,6 +12,6 @@ phases:
 reports:
   jasmine_reports:
     files:
-      - 'my-report.json'
+      - '**/*'
     file-format: JunitXml
     base-directory: 'spec/tests'
