@@ -3,8 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "Pre-build phase"
-      - printenv
+      - echo "Pre-build phase $USERNAME"
+      
   
   build:
     commands:
