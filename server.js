@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 const username = process.env.USERNAME
 const password = process.env.PASSWORD
 
+const port = process.env.PORT || 3000
+
 var dbUrl = 'mongodb://jbrito:Z3-nedation@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
 
 var Message = mongoose.model('Message', {
@@ -53,6 +55,6 @@ mongoose.connect(dbUrl, { useMongoClient: true }, (err) => {
     console.log('mongo db connection', err)
 })
 
-var server = http.listen(8080, () => {
+var server = http.listen(port, () => {
     console.log('server is listening on port', server.address().port)
 })
