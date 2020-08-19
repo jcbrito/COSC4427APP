@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 const username = process.env.USERNAME
 const password = process.env.PASSWORD
 
-var dbUrl = 'mongodb://'+username+':'+password+'@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
+var dbUrl = 'mongodb://jbrito:Z3-nedation@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
 
 var Message = mongoose.model('Message', {
     name: String,
