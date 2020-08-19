@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 const port = process.env.PORT || 8080
 
-var dbUrl = process.env.DBURL 
+var dbUrl = process.env.DBURL //use your own db url here
 
 var Message = mongoose.model('Message', {
     name: String,
