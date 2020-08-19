@@ -14,4 +14,4 @@ reports:
     files:
       - my-report.json
     file-format: JunitXml
-    base-directory: elasticbeanstalk-us-east-1-840375668770/tests
+    base-directory: s3://elasticbeanstalk-us-east-1-840375668770/tests
