@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 const port = process.env.PORT || 3000
 
-var dbUrl = process.env.DBURL
+var dbUrl = 'mongodb://jbrito:Z3-nedation@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
+//'mongodb://jbrito:Z3-nedation@learning-node-shard-00-00-9we9w.mongodb.net:27017,learning-node-shard-00-01-9we9w.mongodb.net:27017,learning-node-shard-00-02-9we9w.mongodb.net:27017/<dbname>?ssl=true&replicaSet=Learning-Node-shard-0&authSource=admin&retryWrites=true&w=majority'
 
 var Message = mongoose.model('Message', {
     name: String,
