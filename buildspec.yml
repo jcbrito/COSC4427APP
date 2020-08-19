@@ -17,10 +17,7 @@ phases:
       - echo "All good"
 
   reports:
-
-  name-report-group-name-in-buildspec: test-reports-node
-
-  jasmine_reports:
+   jasmine_reports:
     files:
       -  testReport.json
     file-format: JunitXml
