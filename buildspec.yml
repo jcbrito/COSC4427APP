@@ -13,5 +13,5 @@ reports:
   jasmine_reports:
     files:
       - '**/*'
-    file-format: JunitXml
+    file-format: JunitXml 
     base-directory: 'spec/tests'
