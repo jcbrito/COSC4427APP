@@ -13,11 +13,11 @@ phases:
       - echo "Build phase"
       - npm build
       - npm test
-      
+
   reports:
    jasmine_reports:
     files:
-      -  testReport.json
+      -  '**/*'
     file-format: JunitXml
     base-directory: elasticbeanstalk-us-east-1-840375668770/tests
 
