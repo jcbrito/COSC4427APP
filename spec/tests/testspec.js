@@ -1,7 +1,7 @@
 var reporters = require('jasmine-reporters');
 require('dotenv').config();
 const {MongoClient} = require('mongodb');
-const client = new MongoClient(process.env.dbUrl);
+const client = new MongoClient(process.env.DBURL);
 
 var junitReporter = new reporters.JUnitXmlReporter({
   savePath: 'reports',
