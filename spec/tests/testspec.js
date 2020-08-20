@@ -1,4 +1,6 @@
 var reporters = require('jasmine-reporters');
+var mongoose = require('mongoose');
+require('dotenv').config();
 
 var junitReporter = new reporters.JUnitXmlReporter({
   savePath: 'reports',
@@ -8,56 +10,23 @@ var junitReporter = new reporters.JUnitXmlReporter({
 
 jasmine.getEnv().addReporter(junitReporter);
 
-function getOpposite(bool){
-    return !bool;
-}
 
-function add(x, y){
-    return x + y;
-}
+describe('Database tests', function (){
 
-function sub(x, y){
-    return x - y;
-}
-
-
-describe('Tests', () =>{
-    it('Gets the opposite boolean value', () => {
+    it('Check if the connection is good', function(){
 
         // arrange
-        let bool = false;
+        let tmp = null;
 
         // act
-        const result = getOpposite(bool);
+        const conn = mongoose.createConnection(process.env.dbUrl);
+
 
         // assert
-        expect(result).toBe(true);
 
+        expect(conn).not.toBeNull;
     })
 
-    it('Get the sum of X and Y', () => {
-
-        // arrange
-        let num1 = 5;
-        let num2 = 3;
-
-        // act
-        const result = add(num1, num2);
-
-        // assert
-        expect(result).toBe(8);
-    })
-
-    it('get the difference of two numbers', () =>{
-
-        // arrange
-        let num1 = 5;
-        let num2 = 4;
-
-        // act
-        const result = sub(num1, num2);
-
-        // assert
-        expect(result).toBe(1);
-    })
 })
+
+
